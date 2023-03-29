@@ -25,7 +25,7 @@ public class Order implements Serializable {
     private Sneaker sneaker;
 
     @Column(nullable = false)
-    private int qty;
+    private Integer qty;
 
     @ManyToOne
     @JoinColumn(name = "customer_id", referencedColumnName = "id")
